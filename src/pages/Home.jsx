@@ -14,7 +14,7 @@ import Footer from '../components/Footer';
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-x-hidden">
-      <div className="absolute w-full h-full bg-gradient-to-tr from-indigo-600/20 to-emerald-300/20"></div>
+      <div className="absolute w-full h-full bg-[C9ADA7]"></div>
       <div className="overflow-hidden">
         <Navbar />
         <Hero />
