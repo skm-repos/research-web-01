@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
-import heroImage from '../assets/hero-image.png'
+import Lottie from "lottie-react";
+import heroAnimation from '../assets/animations/hero.json';
 
 const Hero = () => {
   return (
@@ -9,7 +10,6 @@ const Hero = () => {
       {/* Left Column */}
       <div className="w-full md:w-1/2 space-y-8">
         <motion.div variants={fadeIn('right', 0.2)} initial="hidden" whileInView="show">
-          {/* Star badge */}
           <div className="flex items-center gap-2 bg-gray-50 w-fit px-4 py-2 rounded-full hover:bg-gray-100 transition-colors cursor-pointer group">
             <span className="text-blue-600 group-hover:scale-110 transition-transform">★</span>
             <span className="text-sm font-medium">Jump start your growth</span>
@@ -46,7 +46,6 @@ const Hero = () => {
           whileInView="show"
           className="flex gap-3 max-w-md"
         >
-          {/* Email Form */}
           <input
             type="email"
             placeholder="Email address"
@@ -58,7 +57,7 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Right Column - Images */}
+      {/* Right Column - Lottie animation */}
       <motion.div 
         variants={fadeIn('left', 0.5)}
         initial="hidden"
@@ -66,10 +65,11 @@ const Hero = () => {
         className="w-full md:w-1/2 mt-16 md:mt-0 pl-0 md:pl-12"
       >
         <div className="relative">
-          <img
-            src={heroImage}
-            alt="Team meeting"
-            className="rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300"
+          <Lottie
+            animationData={heroAnimation}
+            loop={true}
+            autoplay={true}
+            className="w-full max-w-lg mx-auto"
           />
         </div>
       </motion.div>
