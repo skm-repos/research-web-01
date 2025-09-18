@@ -21,7 +21,7 @@ const Navbar = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="fixed top-0 left-0 right-0 bg-[#edf2fb]/70 backdrop-blur-md z-50 border-b border-gray-400 shadow-lg"
+      className="fixed top-0 left-0 right-0 bg-[#edf2fb]/90 backdrop-blur-md z-50 border-b border-gray-400 shadow-lg"
     >
       <div className="w-full flex justify-between items-center container mx-auto px-4 sm:px-6 lg:px-8 md:h-17 h-16">
         {/* Logo */}
@@ -55,8 +55,8 @@ const Navbar = () => {
               href={link.href}
               onClick={() => setActiveLink(link.href)}
               whileHover={{ scale: 1.05 }}
-              className={`text-sm font-medium px-5 py-2 rounded-full transition-colors
-                ${activeLink === link.href ? 'text-orange-400' : 'text-gray-800 hover:bg-[#c0c0c0] hover:text-blue-500'}`}
+              className={`text-sm font-medium px-5 py-2 rounded-full hover:bg-[#b8d0eb] transition-colors
+                ${activeLink === link.href ? 'text-orange-600' : 'text-gray-800  hover:text-blue-500'}`}
             >
               {link.label}
             </motion.a>
