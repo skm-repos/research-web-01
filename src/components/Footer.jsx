@@ -33,7 +33,7 @@ const Footer = () => {
       variants={fadeIn('up', 0.2)}
       initial="hidden"
       whileInView="show"
-      className="bg-gray-50"
+      className="bg-blue-600 text-white py-12 "
     >
       <div className="section-container">
         <motion.div 
@@ -49,13 +49,13 @@ const Footer = () => {
               variants={fadeIn('down', 0.5)}
               className="flex items-center gap-1 mb-6"
             >
-              <div className="w-4 h-4 bg-blue-600 rounded-full opacity-75"></div>
-              <div className="w-4 h-4 bg-red-500 rounded-full -ml-2"></div>
+              <div className="w-4 h-4 bg-green-600 rounded-full opacity-75"></div>
+              <div className="w-4 h-4 bg-yellow-500 rounded-full -ml-2"></div>
               <span className="text-xl font-medium ml-1">The Next Design</span>
             </motion.div>
             <motion.p 
               variants={fadeIn('up', 0.6)}
-              className="text-gray-600 mb-6"
+              className="text-white-600 mb-6"
             >
               The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times.
             </motion.p>
@@ -64,23 +64,23 @@ const Footer = () => {
               className="flex gap-4"
             >
               <motion.a 
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.2 }}
                 href="#" 
-                className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-600 hover:text-white transition-colors"
+                className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:text-blue-600 transition-colors"
               >
                 <FaFacebookF className="w-5 h-5" />
               </motion.a>
               <motion.a 
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.2 }}
                 href="#" 
-                className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-400 hover:text-white transition-colors"
+                className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:text-blue-400 transition-colors"
               >
                 <FaTwitter className="w-5 h-5" />
               </motion.a>
               <motion.a 
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.2 }}
                 href="#" 
-                className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-700 hover:text-white transition-colors"
+                className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:text-blue-700 transition-colors"
               >
                 <FaLinkedinIn className="w-5 h-5" />
               </motion.a>
