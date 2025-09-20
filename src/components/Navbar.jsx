@@ -3,7 +3,6 @@ import { HiMenu, HiX } from 'react-icons/hi'
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import logoImage from "../assets/logo2.png";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {

@@ -20,13 +20,13 @@ export default function SignupForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-2">
       <div>
         <label className="block text-sm font-medium">Full Name</label>
         <input
           type="text"
           name="name"
-          className="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full mt-1 px-3 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           placeholder="Enter your full name"
           value={formData.name}
           onChange={handleChange}
@@ -39,7 +39,7 @@ export default function SignupForm() {
         <input
           type="email"
           name="email"
-          className="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full mt-1 px-3 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           placeholder="Enter your email"
           value={formData.email}
           onChange={handleChange}
@@ -53,7 +53,7 @@ export default function SignupForm() {
         <input
           type="date"
           name="dob"
-          className="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full mt-1 px-3 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           value={formData.dob}
           onChange={handleChange}
           required
@@ -65,20 +65,24 @@ export default function SignupForm() {
         <input
           type="password"
           name="password"
-          className="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full mt-1 px-3 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           placeholder="Create a password"
           value={formData.password}
           onChange={handleChange}
           required
         />
       </div>
-
-      <button
-        type="submit"
-        className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
+      <div
+        className="pt-3"
       >
-        Sign Up
-      </button>
+        <button
+            type="submit"
+            className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
+        >
+             Sign Up
+        </button>
+      </div>
+      
     </form>
   );
 }
