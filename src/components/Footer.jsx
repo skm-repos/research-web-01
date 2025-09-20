@@ -33,7 +33,7 @@ const Footer = () => {
       variants={fadeIn('up', 0.2)}
       initial="hidden"
       whileInView="show"
-      className="bg-blue-600 text-white py-12 "
+      className="bg-blue-600 text-white py-0 pt-12 "
     >
       <div className="section-container">
         <motion.div 
@@ -99,7 +99,7 @@ const Footer = () => {
                   variants={fadeIn('up', 0.3 * (categoryIndex + 1))}
                 >
                   <motion.h3 
-                    variants={textVariant(0.2)}
+                    variants={textVariant(0.3)}
                     className="text-lg font-medium mb-4"
                   >
                     {category.charAt(0).toUpperCase() + category.slice(1)}
@@ -116,7 +116,7 @@ const Footer = () => {
                         <motion.a 
                           whileHover={{ x: 5 }}
                           href={link.href} 
-                          className="text-gray-600 hover:text-gray-900"
+                          className="text-white-600 hover:text-gray-900"
                         >
                           {link.name}
                         </motion.a>
@@ -136,19 +136,20 @@ const Footer = () => {
         >
           <motion.div 
             variants={fadeIn('up', 0.9)}
-            className="flex flex-col md:flex-row justify-between items-center gap-4"
+            className="flex flex-col md:flex-col justify-center items-center gap-4"
           >
-            <motion.p 
-              variants={fadeIn('right', 1.0)}
-              className="text-gray-600 text-sm"
-            >
-              Copyright © {new Date().getFullYear()} codetutorbd.com
-            </motion.p>
+            
             <motion.p 
               variants={fadeIn('left', 1.0)}
-              className="text-gray-600 text-sm"
+              className="text-white-600 text-sm"
             >
               Created by Md Al Mamun
+            </motion.p>
+            <motion.p 
+              variants={fadeIn('right', 1.0)}
+              className="text-white-600 text-sm"
+            >
+              Copyright © {new Date().getFullYear()} codetutorbd.com
             </motion.p>
           </motion.div>
         </motion.div>
