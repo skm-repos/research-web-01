@@ -38,16 +38,15 @@ const PurposeSection = () => {
           <motion.div variants={fadeIn('right', 0.3)}>
             <motion.div 
               variants={fadeIn('up', 0.4)}
-              className="text-2xl text-purple-600 font-medium mb-2"
+              className="text-4xl text-purple-600 font-medium mb-2"
             >
               ACHIEVE MORE
             </motion.div>
             <motion.h2 
               variants={textVariant(0.5)}
-              className="text-3xl md:w-4/5 md:text-xl font-bold text-gray-900"
+              className="text-3xl md:w-4/5 md:text-2xl font-bold text-gray-900"
             >
-              At Opinion Payout, our mission is to empower research through ethical data collection and inclusive participation.
-              We believe that every opinion matters—and when shared responsibly, it can shape better decisions, products, and policies.
+             We collect diverse opinions to support ethical, impactful research.
 
             </motion.h2>
           </motion.div>
