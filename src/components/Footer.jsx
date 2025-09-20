@@ -10,17 +10,17 @@ const Footer = () => {
       { name: 'Terms of Use', href: '#' },
       { name: 'Privacy Policy', href: '#' },
       { name: 'How it Works', href: '#' },
-      { name: 'Contact Us', href: '#' },
+      
     ],
     getHelp: [
       { name: 'Support Carrer', href: '#' },
-      { name: '24h Service', href: '#' },
+      { name: '24hr Service', href: '#' },
       { name: 'Quick Chat', href: '#' },
     ],
     support: [
       { name: 'FAQ', href: '#' },
       { name: 'Policy', href: '#' },
-      { name: 'Business', href: '#' },
+      { name: 'Bussiness', href: '#' },
     ],
     contact: [
       { name: 'WhatsApp', href: '#' },
@@ -51,13 +51,13 @@ const Footer = () => {
             >
               <div className="w-4 h-4 bg-green-600 rounded-full opacity-75"></div>
               <div className="w-4 h-4 bg-yellow-500 rounded-full -ml-2"></div>
-              <span className="text-xl font-medium ml-1">The Next Design</span>
+              <span className="text-xl font-medium ml-1">Opinion Payout</span>
             </motion.div>
             <motion.p 
               variants={fadeIn('up', 0.6)}
               className="text-white-600 mb-6"
             >
-              The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times.
+              Opinion Payout connects people with survey opportunities, turning insights into impact. Share your views, influence decisions, and receive recognition for your valuable input—all in one trusted platform.
             </motion.p>
             <motion.div 
               variants={fadeIn('up', 0.7)}
@@ -143,13 +143,13 @@ const Footer = () => {
               variants={fadeIn('left', 1.0)}
               className="text-white-600 text-sm"
             >
-              Created by Md Al Mamun
+              Created by EthSol
             </motion.p>
             <motion.p 
               variants={fadeIn('right', 1.0)}
               className="text-white-600 text-sm"
             >
-              Copyright © {new Date().getFullYear()} codetutorbd.com
+              Copyright © {new Date().getFullYear()} Opinionpayout.com
             </motion.p>
           </motion.div>
         </motion.div>
