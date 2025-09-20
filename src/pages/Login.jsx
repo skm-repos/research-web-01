@@ -6,7 +6,7 @@ import LoginFooter from "../components/LoginFooter";
 
 export default function Login() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
+    <div className="flex min-h-screen items-center justify-center bg-[#d0f4fc]">
       <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
         <LoginHeader />
         <LoginForm />

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Signup() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
+    <div className="flex min-h-screen items-center justify-center bg-[#d0f4fc]">
       <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
         <div className="text-center mb-6">
           <h1 className="text-3xl font-bold">Create Account</h1>

@@ -1,5 +1,6 @@
 // src/components/SignupForm.jsx
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function SignupForm() {
   const [formData, setFormData] = useState({
@@ -75,12 +76,14 @@ export default function SignupForm() {
       <div
         className="pt-3"
       >
-        <button
+        <motion.button
+            whileHover={{scale:1.02}}
+            whileTap={{scale:0.96}}
             type="submit"
             className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
         >
              Sign Up
-        </button>
+        </motion.button>
       </div>
       
     </form>

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { scale } from "../utils/motion";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
@@ -36,12 +38,14 @@ export default function LoginForm() {
         />
       </div>
 
-      <button
+      <motion.button
+        whileHover={{scale:1.02}}
+        whileTap={{scale:0.96}}
         type="submit"
         className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
       >
         Sign In
-      </button>
+      </motion.button>
     </form>
   );
 }
