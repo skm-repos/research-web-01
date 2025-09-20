@@ -2,11 +2,17 @@ import React, { useState } from 'react'
 import { HiMenu, HiX } from 'react-icons/hi'
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
-import logoImage from "../assets/logo2.png"
+import logoImage from "../assets/logo2.png";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeLink, setActiveLink] = useState('#home')
+
+  const navigate = useNavigate();
+  const handleLoginClick = () => {
+    navigate("/login"); // takes you to login page
+  };
 
   const navLinks = [
     { href: "#home", label: "Home" },
@@ -66,9 +72,10 @@ const Navbar = () => {
           <motion.button 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={handleLoginClick}
             className="text-sm font-medium px-5 py-2 rounded-full text-white bg-blue-600 hover:bg-blue-700 transition-colors"
           >
-            <a href="#newsletter">Login</a>
+            Login
           </motion.button>
         </motion.div>
       </div>

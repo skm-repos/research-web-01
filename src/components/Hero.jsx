@@ -2,9 +2,16 @@ import React from 'react'
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import Lottie from "lottie-react";
-import heroAnim from '../assets/animations/hero-image6.json'
+import heroAnim from '../assets/animations/hero-image6.json';
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+
+  const navigate = useNavigate();
+  const handleLoginClick = () => {
+    navigate("/login"); // takes you to login page
+  };
+
   return (
     <section id="home" className="relative bg-gradient-to-tr from-[#caf3fc] to-[#6dc3d4] overflow-hidden">
       <div className='flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 pt-30 pb-30 container mx-auto'>
@@ -46,9 +53,14 @@ const Hero = () => {
             whileInView="show"
             className="flex gap-3 max-w-md"
           >
-            <button className="bg-yellow-400 text-gray-900 px-10 py-3 rounded-xl hover:bg-yellow-500 cursor-pointer transition-all hover:shadow-lg hover:shadow-yellow-200 active:scale-95">
+            <motion.button 
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={handleLoginClick}
+              className="bg-yellow-400 text-gray-900 px-10 py-3 rounded-xl hover:bg-yellow-500 cursor-pointer transition-all hover:shadow-lg hover:shadow-yellow-200 active:scale-95"
+            >
               Get Started
-            </button>
+            </motion.button>
           </motion.div>
         </div>
 
