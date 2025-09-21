@@ -4,10 +4,15 @@ import { AiOutlineTrophy } from "react-icons/ai";
 import { BiGift } from "react-icons/bi";
 import { MdGroups } from "react-icons/md";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServicesSection = () => {
-
+  const navigate = useNavigate();
+  const handleLoginClick = () => {
+    navigate("/login"); // takes you to login page
+  };
+  
 
   const services = [
     {
@@ -37,7 +42,7 @@ const ServicesSection = () => {
   ]
 
   return (
-    <section id="services" className="py-20 container bg mx-auto px-4 sm:px-6 lg:px-8 border">
+    <section id="opportunities" className="py-20 container bg mx-auto px-4 sm:px-6 lg:px-8 rounded-4xl bg-white backdrop-blur-md z-20 border-b border-gray-200 shadow-lg">
      <motion.div 
       variants={fadeIn('up', 0.3)}
       className='flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-24'
@@ -86,6 +91,7 @@ const ServicesSection = () => {
           variants={fadeIn('up', 0.9)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={handleLoginClick}
           className="mt-8 bg-indigo-600 text-white px-8 py-3 cursor-pointer rounded-full hover:bg-indigo-700 transition-colors"
         >
           Get started
