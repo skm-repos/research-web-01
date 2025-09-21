@@ -1,8 +1,8 @@
 import React from 'react'
-import { BsStack } from 'react-icons/bs'
-import { HiLightBulb } from 'react-icons/hi'
-import { FiSettings } from 'react-icons/fi'
-import { BiTime } from 'react-icons/bi'
+import { FaBookOpen } from "react-icons/fa";
+import { AiOutlineTrophy } from "react-icons/ai";
+import { BiGift } from "react-icons/bi";
+import { MdGroups } from "react-icons/md";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -11,25 +11,25 @@ const ServicesSection = () => {
 
   const services = [
     {
-      icon: <BsStack className="w-8 h-8 text-indigo-600" />,
+      icon: <FaBookOpen className="w-8 h-8 text-indigo-600" />,
       title: "Publish Research",
       description: "Make your work accessible to a global community of scholars and innovators.",
       link: "#learn-more"
     },
     {
-      icon: <HiLightBulb className="w-8 h-8 text-amber-400" />,
+      icon: <AiOutlineTrophy className="w-8 h-8 text-amber-400" />,
       title: "Gain Recognition", 
       description: "Build your academic profile with citations, ratings, and peer feedback.",
       link: "#learn-more"
     },
     {
-      icon: <FiSettings className="w-8 h-8 text-red-400" />,
+      icon: <BiGift className="w-8 h-8 text-red-400" />,
       title: "Earn Rewards",
       description: "Get rewarded with tokens, certificates, or collaborations for impactful work.",
       link: "#learn-more"
     },
     {
-      icon: <BiTime className="w-8 h-8 text-cyan-400" />,
+      icon: <MdGroups className="w-8 h-8 text-cyan-400" />,
       title: "Collaborate & Network",
       description: "Connect with researchers, institutions, and industry partners worldwide.",
       link: "#learn-more"

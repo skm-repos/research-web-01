@@ -6,7 +6,7 @@ import FeaturesSection from '../components/FeaturesSection';
 import ScheduleSection from '../components/ScheduleSection';
 import MonitorSection from '../components/MonitorSection';
 import PricingSection from '../components/PricingSection';
-import Reward from '../components/Rewards';
+import Oportunities from '../components/Oportunities';
 import TestimonialsSection from '../components/TestimonialsSection';
 import NewsletterSection from '../components/NewsletterSection';
 import Footer from '../components/Footer';
@@ -24,7 +24,7 @@ export default function Home() {
         <ScheduleSection />
         <MonitorSection />
         <PricingSection />
-        <Reward />
+        <Oportunities />
         <TestimonialsSection />
         <NewsletterSection />
         <Footer />
