@@ -28,7 +28,7 @@ const PricingSection = () => {
           variants={textVariant(0.3)}
           className="text-4xl font-bold mb-6 text-gray-800"
         >
-          Intelligon{" "}
+          Opinion Payout{" "}
           <span className="text-purple-600 font-bold">Global Impacts</span>
         </motion.h2>
 
