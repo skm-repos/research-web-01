@@ -33,7 +33,7 @@ const Footer = () => {
       variants={fadeIn('up', 0.2)}
       initial="hidden"
       whileInView="show"
-      className="bg-[#003049] text-white py-0 pt-12 "
+      className="bg-[#003049]/90 text-white py-0 pt-12 "
     >
       <div className="section-container">
         <motion.div 

@@ -2,10 +2,10 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 // import CompanyLogo from '../components/CompanyLogo';
 import PurposeSection from '../components/PurposeSection';
-import FeaturesSection from '../components/mission';
+import Mission from '../components/mission';
 import ScheduleSection from '../components/collaborate';
 import MonitorSection from '../components/trackImpact';
-import PricingSection from '../components/PricingSection';
+import Statistics from '../components/statistics';
 import Oportunities from '../components/Opportunities';
 import TestimonialsSection from '../components/TestimonialsSection';
 // import NewsletterSection from '../components/NewsletterSection';
@@ -19,11 +19,11 @@ export default function Home() {
         <Navbar />
         <Hero />
         {/* <PurposeSection /> */}
-        <FeaturesSection />
+        <Mission />
         <ScheduleSection />
         <MonitorSection />
-        <PricingSection />
         <Oportunities />
+        <Statistics />
         <TestimonialsSection />
         {/* <NewsletterSection /> */}
         <Footer />

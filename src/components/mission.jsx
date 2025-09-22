@@ -32,7 +32,7 @@ const FeaturesSection = () => {
       variants={fadeIn('up', 0.2)}
       initial="hidden"
       whileInView="show"
-      className="max-w-7xl mx-auto my-10 px-4 py-16 bg-violet-700 rounded-4xl backdrop-blur-md z-50 border-b border-gray-400 shadow-lg"
+      className="max-w-7xl mx-auto my-10 px-4 py-16 bg-violet-700/80 rounded-4xl backdrop-blur-md z-50 border-b border-gray-400 shadow-lg"
     >
       <motion.div 
         variants={fadeIn('up', 0.3)}
