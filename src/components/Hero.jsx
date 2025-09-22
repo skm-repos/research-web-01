@@ -13,7 +13,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative bg-gradient-to-tr from-[#caf3fc] to-[#6dc3d4] overflow-hidden">
+    <section id="home" className="relative bg-gradient-to-tr from-[#caf3fc] to-[#9cdcec] overflow-hidden">
       <div className='flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 pt-30 pb-30 container mx-auto'>
         {/* Left Column */}
         <div className="w-full md:w-1/2 space-y-8">

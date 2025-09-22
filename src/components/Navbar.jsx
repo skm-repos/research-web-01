@@ -16,8 +16,8 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "#home", label: "Home" },
-    { href: "#about", label: "Our Mission" },
-    { href: "#services", label: "Opportunites" },
+    { href: "#mission", label: "Our Mission" },
+    { href: "#opportunities", label: "Opportunites" },
     { href: "#testimonials", label: "Testimonials" },
   ]
 
@@ -27,7 +27,7 @@ const Navbar = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="fixed top-0 left-0 right-0 bg-[#edf2fb]/90 backdrop-blur-md z-50 border-b border-gray-400 shadow-lg"
+      className="fixed top-0 left-0 right-0 bg-[#cae9ff]/80 backdrop-blur-md z-50 border-b border-gray-400 shadow-lg"
     >
       <div className="w-full flex justify-between items-center container mx-auto px-4 sm:px-6 lg:px-8 md:h-17 h-16">
         {/* Logo */}
@@ -83,6 +83,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <motion.div 
+          variants={fadeIn('down',0.1)}
           initial="hidden"
           animate="show"
           className="md:hidden bg-white border-t border-gray-200 py-4"

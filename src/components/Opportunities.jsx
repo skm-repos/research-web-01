@@ -1,35 +1,40 @@
 import React from 'react'
-import { BsStack } from 'react-icons/bs'
-import { HiLightBulb } from 'react-icons/hi'
-import { FiSettings } from 'react-icons/fi'
-import { BiTime } from 'react-icons/bi'
+import { FaBookOpen } from "react-icons/fa";
+import { AiOutlineTrophy } from "react-icons/ai";
+import { BiGift } from "react-icons/bi";
+import { MdGroups } from "react-icons/md";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServicesSection = () => {
-
+  const navigate = useNavigate();
+  const handleLoginClick = () => {
+    navigate("/login"); // takes you to login page
+  };
+  
 
   const services = [
     {
-      icon: <BsStack className="w-8 h-8 text-indigo-600" />,
+      icon: <FaBookOpen className="w-8 h-8 text-indigo-600" />,
       title: "Publish Research",
       description: "Make your work accessible to a global community of scholars and innovators.",
       link: "#learn-more"
     },
     {
-      icon: <HiLightBulb className="w-8 h-8 text-amber-400" />,
+      icon: <AiOutlineTrophy className="w-8 h-8 text-amber-400" />,
       title: "Gain Recognition", 
       description: "Build your academic profile with citations, ratings, and peer feedback.",
       link: "#learn-more"
     },
     {
-      icon: <FiSettings className="w-8 h-8 text-red-400" />,
+      icon: <BiGift className="w-8 h-8 text-red-400" />,
       title: "Earn Rewards",
       description: "Get rewarded with tokens, certificates, or collaborations for impactful work.",
       link: "#learn-more"
     },
     {
-      icon: <BiTime className="w-8 h-8 text-cyan-400" />,
+      icon: <MdGroups className="w-8 h-8 text-cyan-400" />,
       title: "Collaborate & Network",
       description: "Connect with researchers, institutions, and industry partners worldwide.",
       link: "#learn-more"
@@ -37,7 +42,7 @@ const ServicesSection = () => {
   ]
 
   return (
-    <section id="services" className="py-20 container bg mx-auto px-4 sm:px-6 lg:px-8 border">
+    <section id="opportunities" className="py-20 container bg mx-auto px-4 sm:px-6 lg:px-8 rounded-4xl bg-white backdrop-blur-md z-20 border-b border-gray-200 shadow-lg">
      <motion.div 
       variants={fadeIn('up', 0.3)}
       className='flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-24'
@@ -86,6 +91,7 @@ const ServicesSection = () => {
           variants={fadeIn('up', 0.9)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={handleLoginClick}
           className="mt-8 bg-indigo-600 text-white px-8 py-3 cursor-pointer rounded-full hover:bg-indigo-700 transition-colors"
         >
           Get started
