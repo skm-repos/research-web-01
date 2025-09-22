@@ -83,6 +83,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <motion.div 
+          variants={fadeIn('down',0.1)}
           initial="hidden"
           animate="show"
           className="md:hidden bg-white border-t border-gray-200 py-4"
