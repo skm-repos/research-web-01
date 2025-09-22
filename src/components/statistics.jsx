@@ -20,7 +20,7 @@ const PricingSection = () => {
       variants={fadeIn("up", 0.2)}
       initial="hidden"
       whileInView="show"
-      className="py-20 md:pt-40 md:pb-0 px-4 bg-gradient-to-br"
+      className="pt-20 md:pt-40 md:pb-10 px-4"
     >
       <div className="max-w-6xl mx-auto text-center">
         {/* Global Impacts Section */}
