@@ -42,7 +42,7 @@ const ServicesSection = () => {
   ]
 
   return (
-    <section id="opportunities" className="py-20 container bg mx-auto px-4 sm:px-6 lg:px-8 rounded-4xl bg-white backdrop-blur-md z-20 border-b border-gray-200 shadow-lg">
+    <section id="opportunities" className="max-w-7xl py-20 container bg mx-auto px-4 sm:px-6 lg:px-8 rounded-4xl bg-white backdrop-blur-md z-20 border-b border-gray-200 shadow-lg">
      <motion.div 
       variants={fadeIn('up', 0.3)}
       className='flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-24'

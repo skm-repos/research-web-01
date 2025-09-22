@@ -19,9 +19,9 @@ const MonitorSection = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="max-w-7xl mx-auto px-4 py-16 md:py-10"
+      className="max-w-7xl mx-auto px-4 pt-10 md:py-5"
     >
-      <div className="flex flex-col md:flex-row items-center gap-12 pl-10">
+      <div className="flex flex-col md:flex-row items-center gap-12 ">
         {/* Left side - Content */}
         <motion.div 
           variants={fadeIn('right', 0.3)}
@@ -55,12 +55,11 @@ const MonitorSection = () => {
           </motion.button>
         </motion.div>
 
-        {/* Right side - Swiper with background */}
         <motion.div 
           variants={fadeIn('left', 0.5)}
           initial="hidden"
           whileInView="show"
-          className="w-full md:w-1/2 mt-16 py-3 md:py-5 md:mt-0 pl-0 md:pl-12"
+          className="w-full md:w-4/10 mb-10 md:py-5 md:mt-0"
         >
            <div className="relative z-10 hover:scale-[1.02] transition-transform duration-300">
              <Lottie
