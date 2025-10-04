@@ -14,10 +14,42 @@ export default function SignupForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Signup attempt:", formData);
-    // Add API call later
+
+    try {
+      const res = await fetch("http://localhost:3000/api/auth/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullName: formData.name,   // backend expects fullName
+          email: formData.email,
+          password: formData.password,
+          dob: formData.dob,         // you can store dob later in DB
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        alert(data.message || "Signup failed");
+        return;
+      }
+
+      // ✅ Save token (JWT) locally
+      localStorage.setItem("token", data.token);
+
+      alert("Signup successful!");
+      console.log("User:", data.user);
+
+      // Optionally redirect to dashboard
+      // window.location.href = "/dashboard";
+    } catch (err) {
+      console.error("Error during signup:", err);
+      alert("Something went wrong!");
+    }
   };
 
   return (
